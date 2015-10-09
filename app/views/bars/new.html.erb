@@ -1,0 +1,15 @@
+<%= form_for @bar do |b| %>
+	<%= b.label :name %>
+	<%= b.text_field :name %>
+
+	<%= b.label :happyhour %>
+	<%= b.text_field :happyhour %>
+
+	<%= b.label :specials %>
+	<%= b.text_area :specials %>
+
+	<%= b.label :location %>
+	<%= b.text_area :location %>
+
+	<%= b.submit %>
+<% end %>

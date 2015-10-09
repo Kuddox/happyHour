@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  happyhour: MyString
+  specials: MyText
+  location: MyText
+
+two:
+  name: MyString
+  happyhour: MyString
+  specials: MyText
+  location: MyText

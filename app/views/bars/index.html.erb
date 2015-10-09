@@ -1,0 +1,12 @@
+<h1> BARS: </h1>
+<%= link_to 'Add Bar', new_bar_path %>
+<% @bars.each do |bar| %>
+	<h3><%= bar.name %></h3>
+	<p><%= bar.happyhour %></p>
+	<p><%= bar.specials %></p>
+	<p><%= bar.location %></p>
+	<p><%= link_to 'Show bar', bar_path(bar.id) %></p>
+	<p><%= link_to 'Edit Bar', edit_bar_path(bar.id) %></p>
+	<p><%= link_to 'Delete Bar', bar, method: :delete %></p>
+	
+<% end %>
