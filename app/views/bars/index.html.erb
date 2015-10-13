@@ -1,6 +1,10 @@
 <h1> BARS: </h1>
 <%= link_to 'Add Bar', new_bar_path %>
 <% @bars.each do |bar| %>
+<address>
+	<strong><%= bar.name %></strong><br>
+	<%= bar.location %><br>
+</address>
 	<h3><%= bar.name %></h3>
 	<p><%= bar.happyhour %></p>
 	<p><%= bar.specials %></p>
@@ -10,3 +14,11 @@
 	<p><%= link_to 'Delete Bar', bar, method: :delete %></p>
 	
 <% end %>
+
+
+<!-- <address>
+  <strong>Twitter, Inc.</strong><br>
+  1355 Market Street, Suite 900<br>
+  San Francisco, CA 94103<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address> -->
